@@ -1,0 +1,458 @@
+/*fonts link*/
+@font-face {
+	src: url(../fonts/montserrat-regular.ttf);
+  	font-family: montserrat-regular;
+ 	 font-weight: 400;
+}
+@font-face {
+	src: url(../fonts/montserrat-semibold.ttf);
+  	font-family: montserrat-semibold;
+ 	 font-weight: 600;
+}
+@font-face {
+	src: url(../fonts/montserrat-bold.ttf);
+  	font-family: montserrat-bold;
+  	font-weight: 700;
+}
+
+/*global*/
+:root{
+	--white: #ffffff;
+	--black: #333333;
+	--yellow: #f6d365;
+
+	--mon: 'montserrat', sans-serif;
+
+	--fw4: 400;
+	--fw6: 600;
+	--fw7: 700;
+
+	--27: 27px;
+
+}
+
+/*global*/
+body{
+	font-family: var(--mon);
+	font-size: 16px;
+	font-weight: var(--fw4);
+	line-height: var(--27);
+	color: var(--black);
+}
+/*global*/
+
+.tp{
+	padding-top: 95px;
+}
+.bp{
+	padding-bottom: 95px;
+}
+
+/*<================= header start ===================>*/
+/*header start here*/
+.restaurant{
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.header{}
+.logo{}
+.logo img{}
+.main_menu{}
+.menu{}
+.menu li{}
+.menu li:hover a{
+	color: var(--yellow) !important;
+}
+.menu li a{
+	font-family: var(--mon);
+	font-weight: var(--fw6);
+	font-size: 16px;
+	text-transform: uppercase;
+	color: var(--white) !important;
+}
+.search{}
+.search_btn{
+	border: 0;
+}
+.search_btn.show {
+   border-color: transparent;
+}
+.search_btn::after {
+    display: none;
+}
+.search_btn:focus{
+	border: none;
+}
+.search_btn i{
+	font-size: 16px;
+	color: var(--white);
+	transition: .33s linear;
+}
+.search_btn:hover i{
+	color: var(--yellow);
+}
+.search_menu{
+	background-color: transparent;
+}
+.search_menu[data-bs-popper] {
+    top: 118%;
+    left: -330px;
+}
+.search_menu input {
+    background-color: transparent;
+}
+.search_menu button{
+	background-color: var(--black);
+	border: none;
+	transition: .33s linear;
+}
+.search_menu button:hover{
+	background-color: var(--yellow);
+	border: none;
+	color: var(--black);
+}
+.src_item {
+    padding: 10px 15px;
+    text-align: center;
+}
+.src_item:hover{
+    background-color: transparent;
+}
+.src_item.active, .src_item:active {
+    background-color: transparent;
+}
+.src_input:focus {
+    border-color: var(--yellow);
+    box-shadow: none;
+}
+
+/*header end here*/
+
+
+/*<=======banner start here ========>*/
+
+.banner{
+	padding: 100px 0 120px;
+}
+.banner_content{
+	text-align: center;
+}
+.banner_h1{
+	margin: 0;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 115px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+.banner_p{
+	margin: 0;
+	padding: 50px 70px 65px;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--white);
+}
+.button{}
+.common_button{
+	padding: 15px 70px;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: var(--yellow);
+	color: var(--black);
+	transition: .33s linear;
+}
+.common_button:hover{
+	background-color: var(--white);
+	color: var(--black);
+}
+.common_button:active{
+	border-color: var(--yellow) !important;
+	color: var(--white) !important;
+    box-shadow: none;
+}
+
+/*<=======banner end here ========>*/
+
+/*<=======menu start here ========>*/
+.food_menu{
+	background-image: url(../images/banner2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.menu_head{
+	text-align: center;
+}
+.common_h1{
+	margin: 0;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 55px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+.common_p{
+	margin: 0;
+	padding: 35px 70px 0;
+	font-family: var(--mon);
+	font-weight: var(--fw4);
+	font-size: 20px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+.menu_item{
+	margin: 55px 0 0;
+	padding: 20px 20px 25px;
+	transition: .33s linear;
+}
+.menu_image{
+	overflow: hidden;
+
+}
+.menu_image img{
+	transition: .33s linear;
+}
+.mitm_h2{
+	margin: 20px 0 25px;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 35px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+.mitm_p{
+	margin: 0;
+	padding: 0 30px 0;
+	font-family: var(--mon);
+	font-weight: var(--fw4);
+	font-size: 20px;
+	color: var(--black);
+}
+.menu_item:hover{
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.menu_item:hover .menu_image img{
+	scale: 1.1;
+}
+
+/*<=======menu end here ========>*/
+
+
+/*<=======wings start here ========>*/
+.wings{
+	background-image: url(../images/banner3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wings_pos{
+	position: relative;
+}
+.wing_image{}
+.wing_image img{}
+.wing_content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	align-content: center;
+}
+.win_h1{
+	margin: 0;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 35px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+.win_p{
+	margin: 0;
+	padding: 50px 0 65px 0;
+	font-family: var(--mon);
+	font-weight: var(--fw4);
+	font-size: 20px;
+	line-height: var(--27);
+	color: var(--white);
+}
+.win_btn{}
+
+/*<=======wings end here ========>*/
+
+/*<=======statistics start here ========>*/
+.statistics{
+	background-image: url(../images/banner4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.stat_item{
+	border: 5px solid var(--black);
+}
+.stat_h2{}
+.stat_p{
+	font-weight: var(--fw7);
+	text-transform: uppercase;
+}
+
+/*<=======statistics end here ========>*/
+
+/*<=======Satay start here ========>*/
+.Satay{
+	background-image: url(../images/banner5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.Satay_pos{
+	position: relative;
+}
+.Satay_content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	align-content: center;
+}
+
+/*<=======Satay end here ========>*/
+
+/*<=======chef start here ========>*/
+.chef{
+	background-image: url(../images/banner6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.chef_content{}
+.chef_image{}
+.chef_image img{}
+.chef_content p{
+	margin: 0;
+    padding: 60px 200px 40px;
+    font-family: var(--mon);
+    font-weight: var(--fw4);
+    font-size: 26px;
+    line-height: 35px;
+}
+.chef_content h1{
+	margin: 0;
+	font-family: var(--mon);
+	font-weight: var(--fw7);
+	font-size: 35px;
+}
+
+/*<=======chef end here ========>*/
+
+/*<=======newsletter start here ========>*/
+.newsletter{
+	background-image: url(../images/banner7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.news_form{
+	padding-top: 60px;
+}
+.News_group{}
+.news_input{
+	padding: 0 30px;
+}
+::placeholder{
+	color: var(--black) !important;
+	opacity: 50% !important;
+}
+.news_btn{
+	padding: 16px 40px;
+    font-family: var(--mon);
+    font-weight: var(--fw7);
+    font-size: 16px;
+    text-transform: uppercase;
+	color: var(--white);
+	background-color: var(--black);
+	border: 1px solid transparent;
+	transition: .33s linear;
+}
+.news_btn:hover{
+	background-color: transparent;
+	border: 1px solid var(--black);
+}
+
+/*<=======newsletter end here ========>*/
+
+
+/*<=======footer start here ========>*/
+.footer{
+	background-color: var(--black);
+}
+.f_logo{
+/*	margin-top: 45px;*/
+}
+.logo_content{}
+.footer_h2{
+	margin: 0;
+	font-family: var(--mon);
+    font-weight: var(--fw6);
+    font-size: 20px;
+	color: var(--white);
+}
+.logo_content p{
+	margin: 0;
+	padding: 35px 0;
+	color: var(--white);
+}
+.f_social{}
+.scl_icon{
+	margin-right: 10px;
+	padding: 10px;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: var(--white);
+	transition: .33s linear;
+}
+.scl_icon i{
+	font-size: 25px;
+	color: var(--black);
+}
+.scl_icon:hover{
+	background-color: var(--yellow);
+}
+
+.footer_link{}
+.f_link{}
+.link_content{}
+
+
+
+.f_menu{}
+.f_menu ul{
+	padding: 20px 0 0;
+	list-style: none;
+}
+.f_menu ul li{
+	padding-top: 15px;
+}
+.f_menu ul li a{
+	margin: 0;
+	font-family: var(--mon);
+    font-weight: var(--fw4);
+    font-size: 16px;
+    text-decoration: none;
+	color: var(--white);
+	transition: .33s linear;
+}
+.f_menu ul li:hover a{
+	color: var(--yellow);
+}
+
+
+
+
+
+/*<=======footer end here ========>*/
+
